@@ -1,0 +1,24 @@
+#bcolor{
+
+background-color: #375566;
+}
+.headertrans{font-variant: small-caps; }
+
+#navicolor{
+    color:#FFFFFF;
+}
+
+.al{text-align: center}
+.gre{
+background-color:rgba(73,155,234,1);
+
+}
+
+.jus{text-align: justify}
+
+.rou{border-radius: 20px;}
+.divp{height: 40px;}
+
+.gr{color:green;}
+
+.ali{padding-right: 10px; padding-top: 10px}

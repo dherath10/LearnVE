@@ -1,0 +1,108 @@
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -ms-box-sizing: inherit;
+    box-sizing: inherit;
+}
+html, body {
+    margin:0;
+    padding:0;
+}
+.header {
+    position:fixed;
+    left:0;
+    right:0;
+    width:1000px;
+    max-width:1000px;
+    height:100px;
+    background:red;
+    margin:auto;
+}
+@media screen and (max-width:1000px) {
+.header {
+    width:auto
+}
+}
+.wrap {
+    max-width:1000px;
+    margin:auto;
+    border:1px solid #000;
+    padding:110px 10px 10px;
+    background:#f9f9f9;
+}
+</style>
+
+<!--[if lt IE 9]>
+<style>
+.header{width:auto}
+</style>
+<![endif]-->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<style>
+    div.stars {
+  width: 270px;
+  display: inline-block;
+}
+
+input.star { display: none; }
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #0F0;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #0F0;
+  transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: #0f0;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before { color: #F62; }
+
+
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+    </style>
+</head>
+
+<body>
+<div class="header"> This is the fixed  header</div>
+<div class="wrap">
+        <div class="stars">
+  <form action="">
+    <input class="star star-5" id="star-5" type="radio" name="star"/>
+    <label class="star star-5" for="star-5"></label>
+    <input class="star star-4" id="star-4" type="radio" name="star"/>
+    <label class="star star-4" for="star-4"></label>
+    <input class="star star-3" id="star-3" type="radio" name="star"/>
+    <label class="star star-3" for="star-3"></label>
+    <input class="star star-2" id="star-2" type="radio" name="star"/>
+    <label class="star star-2" for="star-2"></label>
+    <input class="star star-1" id="star-1" type="radio" name="star"/>
+    <label class="star star-1" for="star-1"></label>
+  </form>
+</div>
+</div>
+</body>
+</html>
